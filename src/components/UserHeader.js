@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 const UserHeader = ({ user }) => {
-  return !user ? null : <div className="header">Writer: {user.name}</div>;
+  return user ? <div className="header">{user.name}</div> : null;
 };
 
 // class UserHeader extends React.Component {
