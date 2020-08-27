@@ -2,10 +2,12 @@
   "extends": [
     "react-app",
     "airbnb",
+    "airbnb-babel",
     "airbnb/hooks",
     "plugin:jsx-a11y/recommended",
     "prettier",
     "prettier/react"
+    // "plugin:react-redux/recommended"
   ],
   "plugins": ["jsx-a11y", "prettier"],
   "rules": {
@@ -23,5 +25,8 @@
     "react/button-has-type": "off",
     "jsx-a11y/label-has-associated-control": "off",
     "jsx-a11y/no-onchange": "off"
+  },
+  "env": {
+    "browser": true
   }
 }
